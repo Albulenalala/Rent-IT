@@ -3,8 +3,8 @@ Rent IT is a user-friendly web application designed to simplify the process of r
 
 Features
 Intuitive User Interface: Easy navigation and interaction for a seamless user experience.
-Competitive Pricing: Access to the best rental prices in the market.
-Secure Transactions: Fast and safe payment processing to protect user information.
+
+
 Client Satisfaction: Designed with user feedback to ensure happy clients.
 Technologies Used
 Frontend: React, Tailwind CSS
