@@ -1,0 +1,30 @@
+@keyframes carEntry {
+    0% {
+      transform: translateZ(100px) scale(0.5); /* Start from back and smaller */
+      opacity: 0; /* Start invisible */
+    }
+    50% {
+      transform: translateZ(0) scale(1); /* Move to the front and normal size */
+      opacity: 0.9; /* Fade in */
+    }
+    100% {
+      transform: translateZ(0) scale(1); /* Final position */
+      opacity: 0.9; /* Keep visible */
+    }
+  }
+  
+  .car-image {
+    position: absolute;
+    transform: translate(-50%, -50%); /* Adjust position to center */
+    max-height: 800px; /* Maintain maximum height */
+    width: auto; /* Auto width for the aspect ratio */
+    z-index: 1; /* Ensure it stays behind the text */
+  }
+  
+
+/* Dark overlay to improve text readability */
+
+/* Responsive text styles for better readability */
+.text-lg {
+    font-size: 1.2rem; /* Adjust font size for smaller screens */
+}

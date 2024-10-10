@@ -1,0 +1,48 @@
+/* src/components/Loader.css */
+.loader-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    background-color: white;
+    animation: slideIn 1s forwards, rotate 1s forwards 1s, fadeOut 1s forwards 3s; /* Adjust timing as needed */
+  }
+  
+  @keyframes slideIn {
+    from {
+      transform: translateY(100%); /* Start from the bottom */
+      opacity: 0;
+    }
+    to {
+      transform: translateY(0); /* Move to the center */
+      opacity: 1;
+    }
+  }
+  
+  @keyframes rotate {
+    from {
+      transform: translateY(0) rotate(0deg); /* Start at center without rotation */
+    }
+    to {
+      transform: translateY(0) rotate(360deg); /* Complete rotation */
+    }
+  }
+  
+  @keyframes fadeOut {
+    from {
+      transform: translateY(0) rotate(360deg); /* Start from center after rotation */
+      opacity: 1;
+    }
+    to {
+      transform: translateY(-100%) rotate(360deg); /* Move up and maintain rotation */
+      opacity: 0; /* Fade out */
+      filter: blur(5px); /* Add blur effect */
+    }
+  }
+  
+  .logo {
+    height: 150px; /* Adjust logo size to make it larger */
+    width: auto; /* Maintain aspect ratio */
+  }
+  
